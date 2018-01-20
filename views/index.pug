@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  .container
+    h1 Beer Advocate
+    .row
+      .col-lg-6
+        .input-group
+          input.beer_input.form-control(type='text', placeholder='SEARCH FOR A BEER')
+          span.input-group-btn
+            button.submit.btn.btn-primary(type='submit') SUBMIT
+    .results-container
+  script(src='https://code.jquery.com/jquery-3.2.1.min.js', integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=', crossorigin='anonymous')
+  script(type="text/javascript", src="/javascripts/scripts.js")
