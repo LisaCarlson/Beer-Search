@@ -10,6 +10,7 @@ $('document').ready(function() {
         $('.beer_input').val('');
         $('.results-container').empty();
         var beers = JSON.parse(data);
+        console.log(beers);
         if (!beers.length) {
           beerResult += "<div class='text-danger no-result'>Sorry, no results were found for this beer.</div>";
         }
